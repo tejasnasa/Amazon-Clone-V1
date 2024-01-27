@@ -46,3 +46,45 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#search{
+    display: flexbox;
+    background-color: #131921;
+    height: 67px;
+}
+
+li{
+    display: inline-block;
+}
+
+#logo2{
+    height: 48px;
+    display: inline-block;
+}
+
+#logo1{
+    font-size: 30px;
+    color: white;
+    transform: translate(4px,-16.45px);
+    font-weight: 700;
+    display: inline-block;
+}
+
+#logo{
+    background-color: #131921;
+    box-sizing: border-box;
+    margin: 2px;
+    padding-top: 5px;
+}
+
+#logo:hover{
+    border: white solid 1.5px;
+    border-radius: 2%;
+    cursor: pointer;
+}
