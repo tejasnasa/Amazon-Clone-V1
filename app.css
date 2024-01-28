@@ -64,28 +64,15 @@ body{
     justify-content: space-between;
 }
 
-div{
-    display: inline-block;
-}
-
 #logo2{
-    height: 46px;
-    display: inline-block;
-}
-
-#logo1{
-    font-size: 30px;
-    font-family:serif;
-    color: white;
-    transform: translate(8.5px,-15.65px);
-    font-weight: 700;
+    height: 54px;
     display: inline-block;
 }
 
 #logo{
     background-color: #131921;
     box-sizing: border-box;
-    padding-top: 3px;
+    padding-top: 0px;
 }
 
 #search div{
@@ -108,30 +95,90 @@ div{
     border: 0;
 }
 
-#searchbar{
-    border: solid white 1px;
+#search div:nth-of-type(2){
+    height: 50px;
+    padding: 0 7px;
+    font-size: 0.8rem;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-#searchbar img{
-    height: 10px;
+#searchbar{
+    width: 50%;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self:center;
+    height: 40px;
+}
+
+#search div:nth-of-type(3){
+    border: none;
+    border-radius: 0;
 }
 
 #searchbar div{
-    display: inline-block;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#searchbar div:nth-of-type(3){
-    background-color: orange;
+#searchbar div:first-child{
+    background-color: #eee9e9;
+    color: #7a7676;
+    height: 100%;
+    width: 60px;
+    font-size: 12px;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
 }
 
-#search div:nth-of-type(2){
-    height: 50px;
-    padding-top: 5px;
-    font-size: 0.9rem;
+#searchbar input{
+    background-color: #ffffff;
+    color: #7a7676;
+    border: 0;
+    padding: 0;
+    margin: 0;    
+    font-size: 15px;
+    flex-direction: row;
+    justify-content: left;
+    padding-left: 8px;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#searchbar input:enabled{
+    border: 0;
+}
+
+#searchbar div:nth-of-type(2){
+    background-color: rgb(248, 188, 76);
+    border: 0;
+    height: 100%;
+    width: 40px;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+#searchbar img{
+    height: 20px;
+}
+
+#search div:nth-of-type(4){
+    display: flex;
+    align-items: center;
 }
 
 #search div:nth-of-type(4) img{
-    height: 10px;
+    height: 15px;
+    margin: 3px;
 }
 
 #search div:nth-of-type(7) img{
@@ -140,5 +187,5 @@ div{
 
 #search div span{
     font-weight: 700;
-    font-size: 1.05rem;
+    font-size: 0.9rem;
 }
