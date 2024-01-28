@@ -53,25 +53,31 @@ table {
     border: 0;
 }
 
-#search{
-    display: flexbox;
-    background-color: #131921;
-    height: 67px;
+body{
+    font-family: 'Roboto', sans-serif;
 }
 
-li{
+#search{
+    display: flex;
+    background-color: #131921;
+    height: 64px;
+    justify-content: space-between;
+}
+
+div{
     display: inline-block;
 }
 
 #logo2{
-    height: 48px;
+    height: 46px;
     display: inline-block;
 }
 
 #logo1{
     font-size: 30px;
+    font-family:serif;
     color: white;
-    transform: translate(4px,-16.45px);
+    transform: translate(8.5px,-15.65px);
     font-weight: 700;
     display: inline-block;
 }
@@ -79,12 +85,60 @@ li{
 #logo{
     background-color: #131921;
     box-sizing: border-box;
-    margin: 2px;
-    padding-top: 5px;
+    padding-top: 3px;
 }
 
-#logo:hover{
+#search div{
+    color: white;
+    border: solid #131921 1px;
+    margin: 4px;
+}
+
+#search div div{
+    border: 0;
+}
+
+#search div:hover{
     border: white solid 1.5px;
     border-radius: 2%;
     cursor: pointer;
+}
+
+#search div div:hover{
+    border: 0;
+}
+
+#searchbar{
+    border: solid white 1px;
+}
+
+#searchbar img{
+    height: 10px;
+}
+
+#searchbar div{
+    display: inline-block;
+}
+
+#searchbar div:nth-of-type(3){
+    background-color: orange;
+}
+
+#search div:nth-of-type(2){
+    height: 50px;
+    padding-top: 5px;
+    font-size: 0.9rem;
+}
+
+#search div:nth-of-type(4) img{
+    height: 10px;
+}
+
+#search div:nth-of-type(7) img{
+    height: 10px;
+}
+
+#search div span{
+    font-weight: 700;
+    font-size: 1.05rem;
 }
