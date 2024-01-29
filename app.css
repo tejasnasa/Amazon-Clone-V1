@@ -61,7 +61,7 @@ body{
     display: flex;
     background-color: #131921;
     height: 64px;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 #logo2{
@@ -79,6 +79,9 @@ body{
     color: white;
     border: solid #131921 1px;
     margin: 4px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #search div div{
@@ -97,7 +100,7 @@ body{
 
 #search div:nth-of-type(2){
     height: 50px;
-    padding: 0 7px;
+    padding: 2px 7px 0px 7px;
     font-size: 0.8rem;
     font-weight: 100;
     display: flex;
@@ -106,20 +109,21 @@ body{
 }
 
 #searchbar{
-    width: 50%;
+    width: 55%;
     height: 30px;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self:center;
     height: 40px;
 }
 
 #search div:nth-of-type(3){
     border: none;
     border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-self:center;
 }
 
 #searchbar div{
@@ -162,9 +166,19 @@ body{
     background-color: rgb(248, 188, 76);
     border: 0;
     height: 100%;
-    width: 40px;
+    width: 50px;
+    padding: 0;
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;
+}
+
+#searchbar div:nth-of-type(2):hover{
+    background-color: orange;
+}
+
+#searchbar div:first-child:hover{
+    background-color: #d2d0d0;
+    color: black;
 }
 
 #searchbar img{
@@ -172,7 +186,10 @@ body{
 }
 
 #search div:nth-of-type(4){
-    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 0px 6px;
     align-items: center;
 }
 
@@ -181,11 +198,110 @@ body{
     margin: 3px;
 }
 
+#search div:nth-of-type(5){
+    padding: 0px 5.5px 3px 5.5px;
+}
+
+#search div:nth-of-type(6){
+    padding: 0px 5.5px 3px 5.5px;
+}
+
+#search div:nth-of-type(7){
+    padding: 0px 5px 8px 5px;
+    flex-direction: row;
+    align-items: end;
+}
+
+#search div:nth-of-type(7) span{
+    padding-bottom: 6px;
+}
+
 #search div:nth-of-type(7) img{
-    height: 10px;
+    height: 40px;
 }
 
 #search div span{
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+}
+
+#search div span:first-child{
+    font-weight: 500;
+    font-size: 12.2px;
+    color: #bcbaba;
+    padding-bottom: 1px;
+}
+
+#search div:nth-of-type(5) span:first-child, #search div:nth-of-type(6) span:first-child{
+    color: white;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #232f3e;
+    color: white;
+    height: 39px;
+    justify-content: space-evenly;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    border: solid #232f3e 1px;
+    border-radius: 2%;
+    padding: 0px 8px;
+}
+
+header div:hover{
+    border: solid white 1px;
+    cursor: pointer;
+}
+
+main img{
+    width: 98.8%;
+    margin: 0 0.6%;
+    position:relative;
+    transform: translateZ(3px);
+}
+
+article{
+    width: 98.8%;
+    margin: 0 0.6%;
+    background: linear-gradient(#0000,#bcbaba);
+    height: 350px;
+    position: absolute;
+    top: 350px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section{
+    width: 23.33%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+}
+
+section div{
+    width: 46%;
+    height: 40%;
+    background-color: #b7d0f1;
+}
+
+section div img{
+    object-fit:contain;
+}
+
+section div:first-child{
+    width: 100%;
+    background-color: #7a7676;
+    height: auto;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 24px 0 0 19px;
 }
