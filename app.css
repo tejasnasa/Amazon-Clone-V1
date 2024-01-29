@@ -113,7 +113,7 @@ body{
 }
 
 #searchbar{
-    width: 55%;
+    width: 52.5%;
     height: 30px;
     padding: 0;
     margin: 0;
@@ -137,12 +137,13 @@ body{
     justify-content: center;
 }
 
-#searchbar div:first-child{
+#searchbar div:nth-of-type(1){
     background-color: #eee9e9;
     color: #7a7676;
     height: 100%;
     width: 60px;
     font-size: 12px;
+    margin: 0;
     border-top-left-radius: 10%;
     border-bottom-left-radius: 10%;
 }
@@ -226,12 +227,12 @@ body{
 
 #search div span{
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 14px;
 }
 
 #search div span:first-child{
     font-weight: 500;
-    font-size: 12.2px;
+    font-size: 12px;
     color: #bcbaba;
     padding-bottom: 1px;
 }
@@ -287,27 +288,32 @@ article{
 }
 
 section{
-    width: 23.33%;
+    width: 22.25%;
     height: 100%;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 8px;
 }
 
 section div{
     width: 46%;
     height: 40%;
-    margin: 5px;
     background-color: white;
     display: flex;
     flex-direction: column;
 }
 
+section div:hover{
+    cursor: pointer;
+}
+
 section div img{
     object-fit:contain;
-    height: 80%;
-    width: 100%;
+    height: 70%;
+    width: 90%;
+    padding: 5%;
 }
 
 section div:nth-of-type(1){
@@ -317,7 +323,15 @@ section div:nth-of-type(1){
     margin: 0;
     font-size: 20px;
     font-weight: 700;
-    padding: 24px 0 0 10px;
+    padding: 16px 0 8px 10px;
+}
+
+section div:nth-of-type(6){
+    width: 100%;
+    height: 20px;
+    font-size: 12.4px;
+    padding: 10px 0 0 9px;
+    color: #4777b1;
 }
 
 section div span{
@@ -329,4 +343,9 @@ section div span:nth-of-type(2){
     font-size: 12.5px;
     color: #7a7676;
     margin: 0;
+}
+
+section:nth-of-type(2) div span{
+    font-size: 12.4px;
+    margin: 5px 0 1.8px 0;
 }
